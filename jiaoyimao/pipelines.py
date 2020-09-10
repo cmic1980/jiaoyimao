@@ -12,7 +12,7 @@ import jiaoyimao.settings as settings
 class JsonWriterPipeline:
     def __init__(self):
         # 参数初始化，可选实现
-        self.file = open(settings.ROOT_PATH + "sanguo.json", 'wb')
+        self.file = open(settings.ROOT_PATH + "good.json", 'wb')
 
     def process_item(self, item, spider):
         line = json.dumps(dict(item), ensure_ascii=False) + "\n"
